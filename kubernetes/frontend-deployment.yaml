@@ -15,7 +15,7 @@ spec:
         app: pms-client
     spec:
       containers:
-        - name: pms_client
+        - name: pms-client
           image: rizwans21/pms_client
           ports:
             - containerPort: 3000
