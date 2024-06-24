@@ -4,7 +4,7 @@
     - name: Cleanup
       shell: rm -rf Project-Management-System
     - name: Clone Project
-      shell: git clone -b client-local https://github.com/pratyushranjan2/Project-Management-System.git
+      shell: git clone -b client-local https://github.com/Rizwan-S/Project-Management-System.git
     - name: Docker Compose Up
       shell: |
         cd Project-Management-System
