@@ -2,15 +2,15 @@ version: '3.8'
 
 services:
   server:
-    image: pratyush02/pms_server:local
+    image: rizwans21/pms_server:local
     ports:
      - '3001:3001'
     environment:
       - PORT=3001
       - CONNECTION_URL=mongodb+srv://mern:mern@cluster0.kdhyp.mongodb.net/?retryWrites=true&w=majority
-      - JWT_SECRET=binod
+      - JWT_SECRET=secret
   client:
-    image: pratyush02/pms_client:local
+    image: rizwans21/pms_client:local
     ports:
       - '3000:3000'
     depends_on:
